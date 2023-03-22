@@ -1,0 +1,88 @@
+---
+title: "M2 Challenge"
+author: "Vincent"
+date: "2023-02-28"
+output: pdf_document
+---
+
+1266
+
+**On a 2D plane, there are n points with integer coordinates points $[i] = [xi, yi]$. Return the minimum time in seconds to visit all the points in the order given by points.**\newline
+
+**You can move according to these rules:**\newline
+
+In 1 second, you can either:\newline
+* move vertically by one unit,\newline
+* move horizontally by one unit, or\newline
+* move diagonally sqrt(2) units (in other words, move one unit vertically then one unit horizontally in 1 second).\newline\newline
+You have to visit the points in the same order as they appear in the array.\newline
+You are allowed to pass through points that appear later in the order, but these do not count as visits.
+
+
+**Example 1:**
+
+```{c++}
+Input: points = [[1,1],[3,4],[-1,0]]
+Output: 7
+Explanation: One optimal path is [1,1] -> [2,2] -> [3,3] -> [3,4] -> [2,3] -> [1,2] -> [0,1] -> [-1,0]   
+Time from [1,1] to [3,4] = 3 seconds 
+Time from [3,4] to [-1,0] = 4 seconds
+Total time = 7 seconds
+```
+
+**Example 2: **
+```{c++}
+Input: points = [[3,2],[-2,2]]
+Output: 5
+```
+
+
+**Constrain: **
+```{c++}
+points.length == n
+1 <= n <= 100
+points[i].length == 2
+-1000 <= points[i][0], points[i][1] <= 1000
+```
+
+
+
+
+
+
+
+
+561
+
+**Given an integer array nums of 2n integers, group these integers into n pairs $(a1, b1), (a2, b2), ..., (an, bn)$ such that the sum of $min(ai, bi)$ for all i is maximized. Return the maximized sum.**
+
+**Example 1:**
+```{c++}
+Input: nums = [1,4,3,2]
+Output: 4
+Explanation: All possible pairings (ignoring the ordering of elements) are:
+1. (1, 4), (2, 3) -> min(1, 4) + min(2, 3) = 1 + 2 = 3
+2. (1, 3), (2, 4) -> min(1, 3) + min(2, 4) = 1 + 2 = 3
+3. (1, 2), (3, 4) -> min(1, 2) + min(3, 4) = 1 + 3 = 4
+So the maximum possible sum is 4.
+```
+
+
+**Example 2:**
+```{c++}
+Input: nums = [6,2,6,5,1,2]
+Output: 9
+Explanation: The optimal pairing is (2, 1), (2, 5), (6, 6). 
+min(2, 1) + min(2, 5) + min(6, 6) = 1 + 2 + 6 = 9.
+```
+
+
+**Constrains: **
+```{c++}
+1 <= n <= 104
+nums.length == 2 * n
+-104 <= nums[i] <= 104
+```
+
+
+

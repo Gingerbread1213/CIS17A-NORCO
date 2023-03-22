@@ -1,0 +1,69 @@
+---
+title: "Module 1 Challenge"
+author: "Haojie Liu"
+date: "2023-02-22"
+output: pdf_document
+---
+
+704
+
+### Given an array of integers nums which is sorted in ascending order, and an integer target, write a function to search target in nums. If target exists, then return its index. Otherwise, return -1.
+
+**Requirement: ** Solve this by using binary search.\newline
+
+
+**Example 1:**\newline
+Input: nums = [-1,0,3,5,9,12], target = 9\newline
+Output: 4\newline
+Explanation: 9 exists in nums and its index is 4\newline
+
+**Example 2:**\newline
+Input: nums = [-1,0,3,5,9,12], target = 2\newline
+Output: -1\newline
+Explanation: 2 does not exist in nums so return -1\newline
+
+**Constraints:**\newline
+```{c++}
+1 <= nums.length <= 104\newline
+-104 < nums[i], target < 104\newline
+```
+
+All the integers in nums are unique.\newline
+nums is sorted in ascending order.\newline\newline\newpage
+
+
+
+
+2418
+
+### You are given an array of strings names, and an array heights that consists of distinct positive integers. Both arrays are of length n. 
+### For each index i, names[i] and heights[i] denote the name and height of the ith person. 
+### Return names sorted in descending order by the people's heights.
+
+
+
+**Example 1:**\newline
+Input: names = ["Mary","John","Emma"], heights = [180,165,170]\newline
+Output: ["Mary","Emma","John"]\newline
+Explanation: Mary is the tallest, followed by Emma and John.\newline\newline
+
+**Example 2:**\newline
+Input: names = ["Alice","Bob","Bob"], heights = [155,185,150]\newline
+Output: ["Bob","Alice","Bob"]\newline
+Explanation: The first Bob is the tallest, followed by Alice and the second Bob.\newline\newline
+
+**Constraints:**\newline
+```{c++}
+n == names.length == heights.length
+1 <= n <= 103
+1 <= names[i].length <= 20
+1 <= heights[i] <= 105
+```
+
+
+
+
+
+
+
+
